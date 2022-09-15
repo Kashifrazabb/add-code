@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://sproutgigs.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id='container'>
+        <h1 id="heading">DATABASE</h1>
+        <form action="/add" method="post" id="add__form">
+            <input type="text" placeholder="CODE" name="addField" id="add__field">
+            <input type="submit" value="+" id="add__btn">
+        </form>
+        <br>
+        <form action="/refresh" method="post" id="refresh__form">
+            <input type="text" name="total" readonly id="refresh__feild" value="<%= count %>">
+            <input type="submit" value="⟳" id="refresh__btn">
+        </form>
+    </div>
+</body>
+
+</html>

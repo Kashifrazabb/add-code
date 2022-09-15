@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://sproutgigs.com/favicon.ico" type="image/x-icon">
+    <title>PCODE</title>
+</head>
+
+<body>
+    <div id='container'>
+        <h1 id="heading">PCODE</h1>
+        <form action="/status?pid=<%= pid %>" method="POST">
+            <% if(visible) {%>
+                <div id="pcode">
+                    <%= pcode %>
+                </div>
+                <% } else {%>
+                    <input id="get__text" type="text" placeholder="Enter Code from Telegram" name="code">
+                    <div id="msg">
+                        <%= msg %>
+                    </div>
+                    <% } %>
+                        <input id="get_pcode" type="submit" value="get pcode">
+        </form>
+    </div>
+    <div id="footer">Any Problem? <a id="footer_link" href="tg://resolve?domain=feiugum">Click here</a></div>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>
