@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node app",
     "dev": "nodemon",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm start"
   },
   "keywords": [],
   "author": "",
