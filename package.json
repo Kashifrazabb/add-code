@@ -1,14 +1,13 @@
 {
-  "name": "general_pcode",
+  "name": "general-pcode",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app",
     "dev": "nodemon",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
-    "build": "webpack"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "keywords": [],
   "author": "",
