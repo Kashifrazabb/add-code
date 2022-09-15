@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app",
-    "dev": "nodemon",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm start"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
